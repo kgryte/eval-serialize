@@ -28,7 +28,7 @@ var str = serialize( 5 );
 str = serialize( 'beep' );
 // returns '"beep"'
 
-str = serialize( Uint16Array( 4 ) );
+str = serialize( new Uint16Array( 4 ) );
 // returns 'new Uint16Array([0,0,0,0])'
 ```
 
