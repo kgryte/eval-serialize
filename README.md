@@ -32,9 +32,6 @@ str = serialize( Uint16Array( 4 ) );
 // returns 'new Uint16Array([0,0,0,0])'
 ```
 
-
-## Notes
-
 The following input value types are __not__ currently supported.
 
 *	native `functions`
