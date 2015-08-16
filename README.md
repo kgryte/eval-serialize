@@ -32,7 +32,7 @@ str = serialize( Uint16Array( 4 ) );
 // returns 'new Uint16Array([0,0,0,0])'
 ```
 
-The following input value types are __not__ currently supported.
+__Note__: the following input value types are __not__ currently supported...
 
 *	native `functions`
 *	`Map`
