@@ -1,0 +1,70 @@
+{
+  "name": "eval-serialize",
+  "version": "0.0.0",
+  "description": "Serializes an input value for dynamic code evaluation.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/eval-serialize.git"
+  },
+  "keywords": [
+    "utils",
+    "util",
+    "utility",
+    "utilities",
+    "eval",
+    "evil",
+    "serialize",
+    "typed-array",
+    "typed",
+    "array",
+    "date",
+    "buffer",
+    "function",
+    "infinity",
+    "tostring",
+    "string"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/eval-serialize/issues"
+  },
+  "dependencies": {
+    "eval-serialize-buffer": "^1.0.0",
+    "eval-serialize-date": "^1.0.1",
+    "eval-serialize-negative-infinity": "^1.0.0",
+    "eval-serialize-positive-infinity": "^1.0.1",
+    "eval-serialize-typed-array": "^1.0.1",
+    "validate.io-array": "^1.0.6",
+    "validate.io-buffer": "^1.0.0",
+    "validate.io-native-function": "^1.0.0",
+    "validate.io-object": "^1.0.4",
+    "validate.io-regexp": "^1.0.3",
+    "validate.io-strict-date": "^1.0.3",
+    "validate.io-string-primitive": "^1.0.0",
+    "validate.io-typed-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
